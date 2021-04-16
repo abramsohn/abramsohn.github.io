@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;900&display=swap");
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+h1,
+h2,
+h3,
+strong {
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: 4.5em;
+  margin: 16% 0 0 0;
+}
+
+#counters {
+  margin-top: 50px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+#counters h2 {
+  display: inline-block;
+}
+#counters h2:last-child {
+  margin-left: 25px;
+}
+
+#container {
+  width: 1200px;
+  margin: 8vh auto 0 auto;
+}
+
+#simon {
+  display: inline-block;
+  position: relative;
+  margin-right: 80px;
+  width: 700px;
+  height: 700px;
+  background-color: black;
+  background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 68%,
+      rgba(100, 100, 100, 0.7) 69%,
+      rgba(160, 150, 150, 0.7) 71%,
+      rgba(150, 150, 150, 0.7) 100%
+    ),
+    linear-gradient(138deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50%;
+}
+
+aside {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  margin-top: 5%;
+}
+
+#controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 43%;
+  height: 43%;
+  border-radius: 50%;
+  border: 22px black solid;
+  text-align: center;
+  background: conic-gradient(
+    #bababa,
+    #a3a3a3,
+    #ffffff,
+    #bababa,
+    #bababa,
+    #ffffff,
+    #bababa,
+    #a3a3a3,
+    #bababa,
+    #ffffff,
+    #bababa
+  );
+  box-shadow: 0px 0px 9px 10px rgba(0, 0, 0, 0.2);
+}
+#greenButton {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 40%;
+  height: 40%;
+  background: rgb(67, 232, 150);
+  background-image: radial-gradient(
+    circle,
+    rgba(67, 232, 150, 1) 0%,
+    rgba(20, 170, 95, 1) 70%
+  );
+  background-position: 30px 30px;
+  border-radius: 100% 0% 0% 0%;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 12px 9px rgba(0, 0, 0, 0.2);
+}
+
+#greenButton:hover {
+  background-image: radial-gradient(
+    circle,
+    rgba(36, 232, 150, 1) 10%,
+    rgba(20, 170, 95, 1) 90%
+  );
+  background-position: 30px 30px;
+}
+
+#greenButton.clicked {
+  background: radial-gradient(
+    circle,
+    rgba(31, 250, 140, 1) 40%,
+    rgba(20, 170, 95, 1) 85%
+  );
+  background-position: 30px 30px;
+}
+
+#redButton {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(
+    circle,
+    rgba(250, 31, 31, 1) 0%,
+    rgba(170, 20, 20, 1) 70%
+  );
+  background-position: -30px 30px;
+  border-radius: 0% 100% 0% 0%;
+  box-shadow: inset 2px 5px 12px 9px rgba(0, 0, 0, 0.2);
+}
+
+#redButton:hover {
+  background: radial-gradient(
+    circle,
+    rgba(250, 31, 31, 1) 10%,
+    rgba(170, 20, 20, 1) 90%
+  );
+  background-position: -30px 30px;
+  cursor: pointer;
+}
+
+#redButton.clicked {
+  background: radial-gradient(
+    circle,
+    rgba(250, 31, 31, 1) 40%,
+    rgba(170, 20, 20, 1) 85%
+  );
+  background-position: -30px 30px;
+}
+
+#yellowButton {
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(
+    circle,
+    rgba(247, 250, 31, 1) 0%,
+    rgba(170, 168, 20, 1) 70%
+  );
+  background-position: 30px -30px;
+  border-radius: 0% 0% 0% 100%;
+  box-shadow: inset 2px 5px 12px 9px rgba(0, 0, 0, 0.2);
+}
+
+#yellowButton:hover {
+  background: radial-gradient(
+    circle,
+    rgba(247, 250, 31, 1) 10%,
+    rgba(170, 168, 20, 1) 90%
+  );
+  background-position: 30px -30px;
+  cursor: pointer;
+}
+
+#yellowButton.clicked {
+  background: radial-gradient(
+    circle,
+    rgba(247, 250, 31, 1) 40%,
+    rgba(170, 168, 20, 1) 85%
+  );
+  background-position: 30px -30px;
+}
+
+#blueButton {
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(
+    circle,
+    rgba(37, 31, 250, 1) 0%,
+    rgba(20, 22, 170, 1) 70%
+  );
+  background-position: -30px -30px;
+  border-radius: 0% 0% 100% 0%;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 12px 9px rgba(0, 0, 0, 0.2);
+}
+
+#blueButton:hover {
+  background: radial-gradient(
+    circle,
+    rgba(37, 31, 250, 1) 10%,
+    rgba(20, 22, 170, 1) 90%
+  );
+  background-position: -30px -30px;
+}
+
+#blueButton.clicked {
+  background: radial-gradient(
+    circle,
+    rgba(37, 31, 250, 1) 40%,
+    rgba(20, 22, 170, 1) 85%
+  );
+  background-position: -30px -30px;
+}
+
+.disable {
+  pointer-events: none;
+}
+
+/* controller styles */
+
+.controls-ranges {
+  text-align: left;
+}
+
+.controls-item {
+  margin-top: 22%;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+/* 
+label {
+  display: block;
+}
+*/
+.controls-legend {
+  list-style: none;
+  margin-top: 0;
+}
+.controls-legend li {
+  display: inline-block;
+}
+/*
+.game-picker li {
+  margin-right: 15px;
+}
+.skill-level li {
+  margin-right: 7px;
+}
+
+input[type="range"] {
+  z-index: 9;
+  -webkit-appearance: none;
+  background: transparent;
+  display: inline-block;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 80px;
+  border-radius: 3px;
+  background: rgb(22, 142, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 142, 246, 1) 0%,
+    rgba(22, 142, 246, 1) 14%,
+    rgba(13, 84, 145, 1) 24%,
+    rgba(22, 142, 246, 1) 30%,
+    rgba(22, 142, 246, 1) 31%,
+    rgba(22, 142, 246, 1) 45%,
+    rgba(0, 0, 0, 1) 46%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(43, 156, 255, 1) 50%,
+    rgba(22, 142, 246, 1) 64%,
+    rgba(22, 142, 246, 1) 65%,
+    rgba(13, 84, 145, 1) 71%,
+    rgba(22, 142, 246, 1) 80%,
+    rgba(22, 142, 246, 1) 100%
+  );
+  cursor: pointer;
+  margin-top: -14px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 80px;
+  border-radius: 3px;
+  background: rgb(22, 142, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 142, 246, 1) 0%,
+    rgba(22, 142, 246, 1) 15%,
+    rgba(13, 84, 145, 1) 25%,
+    rgba(22, 142, 246, 1) 30%,
+    rgba(22, 142, 246, 1) 31%,
+    rgba(22, 142, 246, 1) 47%,
+    rgba(0, 0, 0, 1) 48%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(43, 156, 255, 1) 51%,
+    rgba(22, 142, 246, 1) 64%,
+    rgba(22, 142, 246, 1) 65%,
+    rgba(13, 84, 145, 1) 70%,
+    rgba(22, 142, 246, 1) 85%,
+    rgba(22, 142, 246, 1) 100%
+  );
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+  border-radius: 1.3px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+  border-radius: 1.3px;
+} */
+
+button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px black solid;
+  margin: 0 15px;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+button.primery {
+  background-color: rgba(250, 31, 31, 1);
+}
+
+button.secondary {
+  background-color: rgba(247, 250, 31, 1);
+}
+
+.controls-legend.buttons {
+  padding-left: 0%;
+}
+.buttons li {
+  width: 32%;
+}
+
+@media (max-width: 1240px) {
+  h1 {
+    font-size: 3em;
+    margin: 16% 0 0 0;
+  }
+
+  #container {
+    width: 500px;
+    margin: 2vh auto 0 auto;
+  }
+
+  #simon {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    height: 450px;
+  }
+
+  #controls {
+    border-width: 15px;
+  }
+
+  .controls-item {
+    font-size: 0.6em;
+    margin-top: 15%;
+  }
+
+  button {
+    width: 20px;
+    height: 20px;
+    border: 2px black solid;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* display: block; */
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  aside :first-child {
+    order: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 4em;
+  }
+  #container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  #container:nth-child(2) {
+    order: 2;
+  }
+
+  #simon {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background: none;
+    border-radius: 0;
+  }
+  #simon :last-child {
+    order: -1;
+  }
+
+  #controls {
+    position: initial;
+    width: 100vw;
+    height: 25%;
+    top: 0;
+    left: 0;
+    transform: none;
+    border-radius: 0;
+    border: none;
+    text-align: center;
+    order: 5;
+  }
+
+  #greenButton {
+    position: initial;
+    width: 100vw;
+    height: 25%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+
+  #redButton {
+    position: initial;
+    width: 100vw;
+    height: 25%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+
+  #yellowButton {
+    position: initial;
+    width: 100vw;
+    height: 25%;
+
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+
+  #blueButton {
+    position: initial;
+    width: 100vw;
+    height: 25%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+
+  .controls-item {
+    margin: 0 0 0 0;
+    font-size: 1em;
+  }
+
+  aside {
+    display: none;
+  }
+
+  button {
+    width: 120px;
+    height: 40px;
+    border: 2px black solid;
+    border-radius: 0;
+  }
+
+  .controls-legend {
+    display: none;
+  }
+  #lastButton:after {
+    font-family: "Roboto Slab", serif;
+
+    content: "AFTER";
+  }
+  #startButton:after {
+    font-family: "Roboto Slab", serif;
+
+    content: "START";
+  }
+  #longestButton:after {
+    font-family: "Roboto Slab", serif;
+
+    content: "LONGEST";
+  }
+}

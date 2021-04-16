@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Link Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-396.000000, -1367.000000)" stroke="#000000">
+            <g id="What-I-do" transform="translate(57.000000, 1038.000000)">
+                <g id="Psyched" transform="translate(2.000000, 311.000000)">
+                    <g id="Icons" transform="translate(330.000000, 11.000000)">
+                        <g id="Link-Icon">
+                            <g transform="translate(8.115942, 8.115942)" id="link">
+                                <g stroke-width="2">
+                                    <path d="M9.27536232,12.7536232 C10.2828469,14.1005135 11.8256548,14.9434208 13.5033622,15.0635749 C15.1810695,15.183729 16.8282502,14.5692825 18.0173913,13.3797101 L21.4956522,9.90144928 C23.6925925,7.62678906 23.6611732,4.01110274 21.4250352,1.77496478 C19.1888973,-0.461173182 15.5732109,-0.492592519 13.2985507,1.70434783 L11.3043478,3.68695652" id="Path"></path>
+                                    <path d="M13.9130435,10.4347826 C12.9055589,9.08789227 11.362751,8.24498501 9.68504363,8.12483091 C8.00733631,8.0046768 6.36015559,8.61912333 5.17101449,9.80869565 L1.69275362,13.2869565 C-0.504186722,15.5616167 -0.472767385,19.1773031 1.76337058,21.413441 C3.99950854,23.649579 7.61519486,23.6809983 9.88985507,21.484058 L11.8724638,19.5014493" id="Path"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

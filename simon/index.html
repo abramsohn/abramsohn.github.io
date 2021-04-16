@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" media="screen" />
+    <script src="app.js" defer></script>
+    <title>Simon</title>
+  </head>
+  <body>
+    <div id="container">
+      <main id="simon">
+        <div id="greenButton"></div>
+        <div id="redButton"></div>
+        <div id="yellowButton"></div>
+        <div id="blueButton"></div>
+
+        <nav id="controls">
+          <h1>Simon</h1>
+          <!-- <div class="controls-ranges">
+            <div class="controls-item">
+              <label for="skill-level">Game:</label>
+              <input
+                type="range"
+                id="gamePicker"
+                name="game-picker"
+                min="1"
+                max="3"
+                step="1"
+              />
+              <ul class="controls-legend game-picker">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+            <div class="controls-item">
+              <label for="skill-level">Skill Level:</label>
+              <input
+                type="range"
+                id="skillLevel"
+                name="skill-level"
+                min="1"
+                max="4"
+                step="1"
+              />
+              <ul class="controls-legend skill-level">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+              </ul>
+            </div>
+          </div> -->
+          <div class="controls-item">
+            <button id="lastButton" class="secondary"></button>
+            <button id="startButton" class="primery"></button>
+            <button id="longestButton" class="secondary"></button>
+            <ul class="controls-legend buttons">
+              <li>Last</li>
+              <li>Start</li>
+              <li>Longest</li>
+            </ul>
+          </div>
+        </nav>
+      </main>
+      <aside>
+        <div>
+        <h2>How to Play:</h2>
+
+        <!-- Slide the ON/OFF switch to ON, the Game Selector switch to "1" and the Skill Level switch to 1,2, 3 or 4. -->
+        <p>
+          Press the <strong>START</strong> button. Simon will give the first
+          signal. Repeat the signal by pressing the same color lens.
+        </p>
+        <p>
+          Simon will duplicate the first signal and add one. Repeat these two
+          signals by pressing the same color lenses, in order.
+        </p>
+        <p>Simon will duplicate these first two signals and add one.</p>
+        <p>
+          Continue playing as long as you can repeat each sequence of signals
+          correctly. After the 5th, 9th and 13th signals in a sequence, Simon
+          automatically speeds up.
+        </p>
+        <p>
+          If you fail to repeat a sequence exactly <!--, or if you take more than 5
+          seconds to repeat a signal, --> Simon responds with a "RAZZ" sound. This
+          means you've lost, and the sequence of signals ends.
+        </p>
+        </div>
+
+        <div id="counters">
+          <h2>Moves: <span id="moveCounter">0</span></h3>
+          <h2>Record: <span id="longestCounter">0</span></h3>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
