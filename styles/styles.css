@@ -236,8 +236,27 @@ main {
 }
 
 .project-links a {
-  /* vertical-align: bottom; */
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
   display: inline-block;
+}
+
+.project-links a.link-icon {
+  background-image: url("../images/link-icon-black.svg");
+}
+
+.project-links a.link-icon:hover {
+  background-image: url("../images/link-icon-red.svg");
+}
+
+.project-links a.git-icon {
+  background-image: url("../images/git-icon-black.svg");
+}
+
+.project-links a.git-icon:hover {
+  background-image: url("../images/git-icon-red.svg");
 }
 
 .projects-grid img {
@@ -246,9 +265,13 @@ main {
 
 /* Desktop / Tablets */
 
-@media (max-width: 1124px) {
+@media (max-width: 1250px) {
   .intro h1 {
     font-size: 7em;
+  }
+
+  .word-group {
+    display: inline-block;
   }
 
   .intro h2 {
@@ -256,5 +279,35 @@ main {
     font-weight: 600;
     margin: 0;
     color: var(--white);
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 4.5%;
+    grid-template-areas: "contact-info statement-info statement-info";
+  }
+
+  .contact-info li {
+    display: block;
+    line-height: 1.2;
+  }
+  .contact-info li::after {
+    content: "";
+  }
+  .statement-info {
+    padding-top: 0;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 4.5%;
+    grid-template-areas: "psyched frame-designer simon";
   }
 }
