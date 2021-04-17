@@ -93,6 +93,10 @@ button {
   border: none;
 }
 
+button:focus {
+  outline: none;
+}
+
 .container {
   box-sizing: border-box;
   padding: 0 4%;
@@ -108,6 +112,7 @@ button {
 .intro h1 {
   font-size: 8em;
   font-weight: 700;
+  line-height: 1.1;
   margin: 0;
 }
 
@@ -294,7 +299,6 @@ main {
   }
 
   .info-grid {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0px 4.5%;
     grid-template-areas: "contact-info statement-info statement-info";
@@ -312,10 +316,61 @@ main {
   }
 
   .projects-grid {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-template-rows: 1fr; */
     gap: 0px 4.5%;
-    /* grid-template-areas: "psyched frame-designer simon"; */
+  }
+}
+
+@media (max-width: 900px) {
+  .intro h1 {
+    font-size: 5em;
+    /* margin-bottom: 5%; */
+  }
+
+  .intro h2 {
+    font-size: 2em;
+  }
+
+  .info-grid {
+    display: block;
+  }
+
+  .contact-info li {
+    display: inline-block;
+  }
+
+  .contact-info li::after {
+    content: "|";
+    font-style: normal;
+    color: var(--red);
+    margin-left: 5px;
+  }
+
+  .projects-grid {
+    display: block;
+  }
+
+  .divider {
+    /* height: 10px; */
+    margin: 30px 10%;
+    /* padding: 0 20%; */
+    border-bottom: 1px solid rgb(225, 225, 225);
+  }
+}
+
+@media (max-width: 700px) {
+  .intro h1 {
+    font-size: 4em;
+  }
+
+  .intro h2 {
+    font-size: 1.8em;
+  }
+
+  .contact-info li {
+    display: block;
+    line-height: 1.2;
+  }
+  .contact-info li::after {
+    content: "";
   }
 }
