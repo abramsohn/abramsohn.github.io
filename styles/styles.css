@@ -201,26 +201,41 @@ main {
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: max-content max-content;
   gap: 0px 8.3%;
-  grid-template-areas: "psyched frame-designer simon";
+  grid-template-areas:
+    "psyched frame-designer simon"
+    "psyched-stack frame-designer-stack simon-stack";
 }
 
-.projects-grid-item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
+/* .projects-grid-item { */
+/* display: flex; */
+/* flex-direction: column; */
+/* flex-wrap: nowrap; */
+/* justify-content: space-between; */
+/* } */
 
 .psyched {
   grid-area: psyched;
 }
+
+.psyched-stack {
+  grid-area: psyched-stack;
+}
+
 .frame-designer {
   grid-area: frame-designer;
 }
+
+.frame-designer-stack {
+  grid-area: frame-designer-stack;
+}
 .simon {
   grid-area: simon;
+}
+
+.simon-stack {
+  grid-area: simon-stack;
 }
 
 .projects-grid-item header {

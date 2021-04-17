@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
     <title>link-icon-black</title>
     <desc>Created with Sketch.</desc>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="Link-Icon" transform="translate(-13.000000, -13.000000)" stroke="#282828" stroke-width="2">
+        <g id="Link-Icon" transform="translate(-12.000000, -12.000000)" stroke="#282828" stroke-width="3">
             <g id="link-icon-black" transform="translate(14.000000, 14.000000)">
                 <g id="link">
                     <path d="M16,22 C17.737911,24.3233858 20.3992546,25.7774009 23.2932997,25.9846667 C26.1873449,26.1919325 29.0287316,25.1320123 31.08,23.08 L37.08,17.08 C40.8697221,13.1562111 40.8155237,6.91915223 36.9581858,3.06181425 C33.1008478,-0.795523739 26.8637889,-0.849722095 22.94,2.94 L19.5,6.36" id="Path"></path>
