@@ -9,7 +9,7 @@ function handleClick(e) {
     const main = document.querySelector('main');
     const offsetTop = main.offsetTop;
  
-  scroll({
+  scrollTo({
     top: offsetTop,
     behavior: 'smooth'
   });
