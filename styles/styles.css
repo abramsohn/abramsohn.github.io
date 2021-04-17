@@ -146,6 +146,7 @@ button:focus {
 .nav-arrow {
   width: 62px;
   height: 62px;
+  padding: 0px; /* fix oval appearance on ios */
   border-radius: 50%;
   background-color: var(--white);
   margin: 0;
