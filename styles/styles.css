@@ -208,13 +208,6 @@ main {
     "psyched-stack frame-designer-stack simon-stack";
 }
 
-/* .projects-grid-item { */
-/* display: flex; */
-/* flex-direction: column; */
-/* flex-wrap: nowrap; */
-/* justify-content: space-between; */
-/* } */
-
 .psyched {
   grid-area: psyched;
 }
@@ -319,10 +312,10 @@ main {
   }
 
   .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: 1fr; */
     gap: 0px 4.5%;
-    grid-template-areas: "psyched frame-designer simon";
+    /* grid-template-areas: "psyched frame-designer simon"; */
   }
 }
