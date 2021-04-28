@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="69px" height="69px" viewBox="0 0 69 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-    <title>link-icon-black</title>
+    <title>link-icon-white</title>
     <desc>Created with Sketch.</desc>
-    <g id="link-icon-black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g transform="translate(14.000000, 14.000000)" id="link" stroke="#282828" stroke-width="3">
-            <g>
+    <g id="link-icon-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="link-icon-red" transform="translate(14.000000, 14.000000)" stroke="#F8F8F8" stroke-width="3">
+            <g id="link">
                 <path d="M16,22 C17.737911,24.3233858 20.3992546,25.7774009 23.2932997,25.9846667 C26.1873449,26.1919325 29.0287316,25.1320123 31.08,23.08 L37.08,17.08 C40.8697221,13.1562111 40.8155237,6.91915223 36.9581858,3.06181425 C33.1008478,-0.795523739 26.8637889,-0.849722095 22.94,2.94 L19.5,6.36" id="Path"></path>
                 <path d="M24,18 C22.262089,15.6766142 19.6007454,14.2225991 16.7067003,14.0153333 C13.8126551,13.8080675 10.9712684,14.8679877 8.92,16.92 L2.92,22.92 C-0.869722095,26.8437889 -0.815523739,33.0808478 3.04181425,36.9381858 C6.89915223,40.7955237 13.1362111,40.8497221 17.06,37.06 L20.48,33.64" id="Path"></path>
             </g>
