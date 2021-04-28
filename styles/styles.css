@@ -170,12 +170,13 @@ button:focus {
 }
 
 /* Main */
+
 main {
   box-sizing: border-box;
   width: 92vw;
   min-height: 100vh;
-  /* padding: 4% 0; */
 }
+
 /* Information Section */
 
 .info-grid {
@@ -318,18 +319,6 @@ main {
   background-image: url("../images/git-icon-white.svg");
 }
 
-/* .project-links a.link-icon:hover { */
-  /* background-image: url("../images/link-icon-red.svg"); */
-/* } */
-
-/* .project-links a.git-icon { */
-  /* background-image: url("../images/git-icon-black.svg"); */
-/* } */
-
-/* .project-links a.git-icon:hover { */
-  /* background-image: url("../images/git-icon-red.svg"); */
-/* } */
-
 .projects-grid img {
   width: 100%;
 }
@@ -408,9 +397,7 @@ main {
   }
 
   .divider {
-    /* height: 10px; */
     margin: 30px 10%;
-    /* padding: 0 20%; */
     border-bottom: 1px solid rgb(225, 225, 225);
   }
 }
